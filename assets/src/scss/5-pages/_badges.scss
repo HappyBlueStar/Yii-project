@@ -1,0 +1,145 @@
+.userbadge {
+  position: relative;
+  border: 1px solid #d1dbdf;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    height: 62px;
+  }
+
+  .userbadge-info {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    h2,
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .percent {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      color: #666;
+      flex: 0 0 auto;
+      @media (min-width: 768px) {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .x {
+      color: #666;
+      margin-right: 4px;
+    }
+
+    .count {
+      font-weight: bold;
+    }
+  }
+}
+
+.userbadge-icon {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 auto;
+}
+
+.userbadge-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #effaff;
+  height: 100%;
+  margin-left: 62px;
+  z-index: -1;
+
+  &:before {
+    content: '';
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    left: -62px;
+    top: 0;
+    background: #effaff;
+  }
+}
+
+.userbadge-icon {
+  background-image: url(../../../image/user/badges.png);
+  background-repeat: no-repeat;
+}
+
+.userbadge-supporter {
+  background-position: -4px -329px;
+}
+
+.userbadge-greenhorn {
+  background-position: -4px -590px;
+}
+
+.userbadge-extension-smith {
+  background-position: -4px -262px;
+}
+
+.userbadge-regular {
+  background-position: -4px -195px;
+}
+
+.userbadge-editor {
+  background-position: -4px -68px;
+}
+
+.userbadge-critic {
+  background-position: -4px -455px;
+}
+
+.userbadge-mogul {
+  background-position: -4px -522px;
+}
+
+.userbadge-civic-duty {
+  background-position: -4px -134px;
+}
+
+.userbadge-commentator {
+  background-position: -4px -393px;
+}
+
+.view-user-view-badge {
+  .userbadge-icon {
+    border-radius: 64px;
+  }
+
+  h2, .description {
+    margin-top: 0;
+  }
+
+  .description {
+    text-transform: uppercase;
+    color: grey;
+    font-size: $font-size-h4;
+  }
+
+  .info {
+    clear: both;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+%blockquote {
+  display: block;
+  background: #fff;
+  @include rem(font-size, 18px);
+  @include rem(line-height, 26px);
+  @include rem(padding-top, 15px);
+  @include rem(padding-right, 20px);
+  @include rem(padding-bottom, 15px);
+  @include rem(padding-left, 85px);
+  border-radius: 6px;
+  min-height: 5em;
+  background-position: 20px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+
+  @media (max-width: 767px) {
+    @include rem(padding-left, 20px);
+    @include rem(padding-top, 75px);
+    background-position: center 20px;
+  }
+
+  a {
+    word-break: break-word;
+  }
+}
+
+blockquote.tip {
+  @extend %blockquote;
+  background-color: #DDF7F2;
+  background-image: url(../../../image/guide/ico_tip.svg);
+  border-left: 4px solid #70C1B3;
+}
+
+blockquote.note {
+  @extend %blockquote;
+  background-color: #FFF7E9;
+  background-image: url(../../../image/guide/ico_note.svg);
+  border-left: 4px solid #FFAB19;
+}
+
+blockquote.info {
+  @extend %blockquote;
+  background-color: #E3F7FF;
+  background-image: url(../../../image/guide/ico_info.svg);
+  border-left: 4px solid #247BA0;
+}
+
+blockquote.warn,
+blockquote.warning {
+  @extend %blockquote;
+  background-color: #FFF0F4;
+  background-image: url(../../../image/guide/ico_attention.svg);
+  border-left: 4px solid #FF1654;
+}

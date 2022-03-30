@@ -1,0 +1,210 @@
+.guide-content {
+  .broken-link {
+    background: #FFE4EF;
+    border-bottom: 1px solid lightpink;
+  }
+
+  .prev-next {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @include rem(margin-top, 40px);
+    @include rem(margin-bottom, 40px);
+    border-top: 2px dashed rgba($separator-color, 0.7);
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+      vertical-align: middle;
+    }
+  }
+
+  .panel-heading {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+
+  .guide-panel .panel-body {
+    > ul.list-unstyled {
+      border-top: 1px dashed $gray;
+      @include rem(padding-top, 12px);
+
+      li {
+        @include rem(margin-bottom, 12px);
+      }
+    }
+  }
+
+  ul {
+    @include rem(padding-left, 30px);
+    list-style-type: none;
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    li:before {
+      color: $eshill-green;
+      content: "⁃";
+      display: inline-block;
+      width: 6pt;
+      margin-left: -12pt;
+      margin-right: 6pt;
+    }
+  }
+
+  .alert-warning {
+    margin-bottom: 22px;
+  }
+}
+
+.edit-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $eshill-blue;
+  @include rem(border-radius, 6px);
+  @include rem(margin-top, 28px);
+  @include rem(padding, 14px);
+  @include rem(line-height, 24px);
+  margin-bottom: 0.8em;
+  color: $eshill-blue;
+
+  p {
+    margin: 0;
+  }
+
+  .edit-icon {
+    margin-right: 1.5em;
+    float: left;
+
+    @media (min-width: 768px) {
+      margin-left: 1.5em;
+    }
+
+    i {
+      font-size: 3.5em;
+      color: $eshill-blue;
+    }
+  }
+}
+
+.hashlink {
+  display: none;
+  text-decoration: none;
+}
+
+.hashlink:hover {
+  display: inline;
+  text-decoration: none;
+}
+
+h1:hover .hashlink,
+h2:hover .hashlink,
+h3:hover .hashlink,
+h4:hover .hashlink,
+h5:hover .hashlink,
+h6:hover .hashlink {
+  display: inline;
+}
+
+
+.guide-content h1:first-of-type {
+  margin-top: 0;
+}
+
+div.toc {
+  border: solid 1px #ddd;
+  @include rem(padding, 15px);
+  @include rem(margin, 15px 0);
+  width: auto;
+  max-width: 36em;
+
+  ol {
+    margin: 0;
+    width: auto;
+  }
+}
+
+div.image {
+  border: solid 1px #ddd;
+  padding: 0;
+  @include rem(margin, 15px 0);
+  width: auto;
+  text-align: center;
+
+  p {
+    background: #eee;
+    text-align: center;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  img {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  img.img-responsive {
+    padding: 0;
+    border: none;
+  }
+}
+
+%chevron {
+  @include rem(margin-top, 30px);
+  background-repeat: no-repeat;
+  background-size: 12px 20px;
+  position: relative;
+  @include rem(top, 5px);
+  @include rem(width, 12px);
+  @include rem(height, 20px);
+  display: inline-block;
+  @include rem(min-height, 20px);
+  vertical-align: center;
+}
+
+.chevron-left {
+  @extend %chevron;
+  @include rem(margin-right, 20px);
+  background-image: url(../../../image/guide/larr.svg);
+}
+
+.chevron-right {
+  @extend %chevron;
+  @include rem(margin-left, 20px);
+  background-image: url(../../../image/guide/rarr.svg);
+}
+
+.chevron-up {
+  @extend %chevron;
+  top: 7px;
+  @include rem(margin-left, 20px);
+  background-size: 20px 12px;
+  @include rem(width, 20px);
+  @include rem(height, 12px);
+  background-image: url(../../../image/guide/tarr.svg);
+}
+
+.guide-view {
+  code,
+  a {
+    word-break: break-word;
+  }
+
+  @media (max-width: 767px) {
+    .pull-right {
+      float: none !important;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+}

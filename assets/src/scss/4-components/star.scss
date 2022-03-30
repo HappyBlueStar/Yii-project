@@ -1,0 +1,16 @@
+.star-wrapper {
+  .fa {
+    font-size: fontsize(h4);
+    font-style: normal;
+    cursor: pointer;
+  }
+}
+
+.profile-star-list {
+  list-style: none;
+  padding: 0;
+
+  .star-wrapper {
+    display: inline;
+  }
+}

@@ -1,0 +1,42 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+::selection {
+  text-shadow: none !important;
+  background: $selection-color;
+  color: $gray-darker;
+}
+
+::-moz-selection {
+  text-shadow: none !important;
+  background: $selection-color;
+  color: $gray-darker;
+}
+
+.visible-huge {
+  display: none !important;
+}
+
+@media (min-width: 1650px) {
+  .visible-huge {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1650px) {
+  .hidden-huge {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @extend .hidden-huge;
+}
+
+.padded-row {
+  @include rem(margin-right, 6px);
+  @include rem(margin-left, 6px);
+}

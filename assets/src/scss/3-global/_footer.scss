@@ -1,0 +1,75 @@
+footer {
+  background-color: $footer-background-color;
+  color: darken($footer-color, 10%);
+  @include rem(min-height, 428px);
+
+  a {
+    text-decoration: none;
+    color: darken($footer-color, 10%);
+
+    &:hover {
+      color: $footer-color;
+    }
+
+    &:focus {
+      color: $footer-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-inner {
+  .center-block {
+    white-space: nowrap;
+    width: 40%;
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+}
+
+.footerList {
+  list-style: outside none none;
+  @include rem(margin-top, 60px);
+  padding-left: 0;
+}
+
+.footerList_item {
+  @include rem(font-size, 14px);
+  @include rem(margin-bottom, 12px);
+
+  .social {
+    white-space: nowrap;
+
+    a {
+      border: none;
+      text-align: center;
+    }
+
+    i {
+      @include rem(font-size, 14px);
+      @include rem(margin-left, 3px);
+      @include rem(padding, 6px 6px);
+      display: inline-block;
+      background-color: $footer-color;
+      color: $footer-background-color;
+      border-radius: 50%;
+      @include rem(width, 24px);
+      @include rem(height, 24px);
+      transition: color 0.2s ease-out, background 0.2s ease-in;
+
+      &:hover {
+        background-color: #fff;
+        color: $footer-background-color;
+      }
+    }
+  }
+}
+
+.footerList_item:first-child {
+  color: $footer-color;
+  @include rem(font-size, 18px);
+  font-family: $bold-headings-font-family;
+  @include rem(margin-top, 2px);
+  margin-left: 0;
+  @include rem(margin-bottom, 30px);
+}

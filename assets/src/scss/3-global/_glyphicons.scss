@@ -1,0 +1,47 @@
+.sorter a.asc:after,
+.sorter a.desc:after,
+.grid-view a.asc:after,
+.grid-view a.desc:after,
+.glyphicon:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-size: inherit;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-synthesis: weight style;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.sorter a.asc:after,
+.grid-view a.asc:after {
+  content: "\f160";
+}
+
+.sorter a.desc:after,
+.grid-view a.desc:after {
+  content: "\f161";
+}
+
+.glyphicon-eye-open:after {
+  content: "\f06e";
+}
+
+.glyphicon-pencil:after {
+  content: "\f040";
+}
+
+.glyphicon-trash:after {
+  content: "\f1f8";
+}
+
+

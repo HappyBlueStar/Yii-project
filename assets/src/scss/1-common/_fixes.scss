@@ -1,0 +1,21 @@
+textarea:hover,
+input[type=text]:hover,
+textarea:active,
+input[type=text]:active,
+textarea:focus,
+input[type=text]:focus,
+button:focus,
+button:active,
+button:hover {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}

@@ -1,0 +1,51 @@
+html {
+  @include rem-baseline;
+}
+
+a {
+  text-decoration: underline;
+  transition: all ease-in-out .2s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  text-decoration: none;
+}
+
+$font-sizes: (
+  base: $font-size-base,
+  large: $font-size-large,
+  larger: $font-size-base * 1.5,
+  small: $font-size-small,
+  smaller: $font-size-base * 0.7,
+  h1: $font-size-h1,
+  h2: $font-size-h2,
+  h3: $font-size-h3,
+  h4: $font-size-h4,
+  h5: $font-size-h5,
+  h6: $font-size-h6,
+  2 up: $font-size-base * 2
+);
+
+@function fontsize($key) {
+  @if map-has-key($font-sizes, $key) {
+    @return map-get($font-sizes, $key);
+  }
+  @warn "Unknown `#{$key}` in $font-sizes.";
+  @return null;
+}
+
+@function px2rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+html[lang=jp] em {
+  font-weight: bold;
+  font-style: normal;
+}

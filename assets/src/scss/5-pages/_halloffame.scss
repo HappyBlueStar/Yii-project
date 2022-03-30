@@ -1,0 +1,40 @@
+.halloffame-members {
+  @extend .col-md-3;
+  @extend .col-sm-6;
+  @extend .col-xs-12;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    padding: .4em 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: $font-size-large;
+  }
+
+  span {
+    float: right;
+    color: #198068;
+  }
+}
+
+.halloffame-members:nth-child(2n) {
+  background: #f9f9f9;
+}
+
+.halloffame-all-members {
+  clear: both;
+  text-align: center;
+  font-size: $font-size-h3;
+  padding-top: 4rem;
+}
