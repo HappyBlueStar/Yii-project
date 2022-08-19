@@ -461,7 +461,7 @@
             "version": "3.3.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobinHerbots/Inputmask.git",
+                "url": "git@github.com:RobinHerbots/Inputmask.git",
                 "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
@@ -482,7 +482,7 @@
             "version": "2.2.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "c0185ab7c75aab88762c5aae780b9d83b80eda72"
             },
             "dist": {
@@ -1101,12 +1101,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
                 "files": [
                     "library/HTMLPurifier.composer.php"
                 ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
                 "exclude-from-classmap": [
                     "/library/HTMLPurifier/Language/"
                 ]
@@ -3603,16 +3603,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.44",
+            "version": "2.0.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "fa89647a2d2c5de1c12c65eb94084404f52a6059"
+                "reference": "d73259c3bc886648a6875109f9f09cddeff03708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/fa89647a2d2c5de1c12c65eb94084404f52a6059",
-                "reference": "fa89647a2d2c5de1c12c65eb94084404f52a6059",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d73259c3bc886648a6875109f9f09cddeff03708",
+                "reference": "d73259c3bc886648a6875109f9f09cddeff03708",
                 "shasum": ""
             },
             "require": {
@@ -3668,7 +3668,7 @@
                 {
                     "name": "Carsten Brandt",
                     "email": "mail@cebe.cc",
-                    "homepage": "https://cebe.cc/",
+                    "homepage": "https://www.cebe.cc/",
                     "role": "Core framework development"
                 },
                 {
@@ -3701,11 +3701,11 @@
                 "yii2"
             ],
             "support": {
-                "forum": "https://www.yiiframework.com/forum/",
+                "forum": "https://forum.yiiframework.com/",
                 "irc": "ircs://irc.libera.chat:6697/yii",
                 "issues": "https://github.com/yiisoft/yii2/issues?state=open",
                 "source": "https://github.com/yiisoft/yii2",
-                "wiki": "https://www.yiiframework.com/wiki/"
+                "wiki": "https://www.yiiframework.com/wiki"
             },
             "funding": [
                 {
@@ -3721,7 +3721,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-30T07:50:56+00:00"
+            "time": "2022-08-18T22:18:45+00:00"
         },
         {
             "name": "yiisoft/yii2-apidoc",
@@ -7868,5 +7868,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
